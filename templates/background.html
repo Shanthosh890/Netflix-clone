@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="back"> 
+        <img src="../static/image/background.jpg" alt="">
+        
+        <div class="back-play">
+        
+           <div class="one-one">
+            
+                <div class="back-all">
+                    
+                    <div class="thumb-image">
+                        {%for i in data%}
+                        <div class="thumb-url">
+                            <img src="{{i.thumb}}" alt="">
+                        </div>
+                    
+                        <div class="thumb-icon">
+                            <a href="{{url_for('videoplayer',var=i.vurl)}}"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="{{url_for('netflix')}}"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <h1>{{i.name}}</h1>
+                    {%endfor%}
+                
+                </div>
+                
+           </div>
+          
+            <span class="green">97% match</span><span class="year">2023</span><span class="adult">A</span><span class="epi">5 Episodes</span><span class="hd">HD</span>
+            <h3>S1:E1 <span> Criminal and Executioner</span></h3>
+            <p>Executioner Yamada Asaemon sagiri talks with the condemned murderer and uncannily strong ninja Gabimaru the Hllow, who says he wants her to kill him.</p>
+            <p>Cast: Chiaki Koboyashi, Yumiri Hanamori,Ryohei Kimura</p> <br>
+            <h4><i class="fa fa-plus" aria-hidden="true"></i><br> Mylist</h4><span class="flo"><h4><i class="fa fa-thumbs-up" aria-hidden="true"></i><br>Rate</h4></span>
+            <br>
+            <span class="season">Season:1 <i class="fa fa-angle-down" aria-hidden="true"></i></span><br>
+            
+            <div class="flex-vid">
+                <div class="vid-con">
+                    
+                    <div class="vid-sug" style="background-image: url(../static/image/ep1.webp);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>1.pilot</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        
+                    </div>
+                    <div class="vid-info1">
+                        <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p>
+                    </div>
+                </div>
+
+                <div class="vid-con">
+                    <div class="vid-sug" style="background-image: url(../static/image/ep2.jpg);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>2.Lucifer,stay.Good Evil</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <!-- <h3>1.Pilot <span class="do"><i class="fa fa-download" aria-hidden="true"></i></span></h3> -->
+                        <!-- <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p> -->
+                    </div>
+                    <div class="vid-info1">
+                        <p>While feeling the heat to return to hell,Lucifer makes time to investigate how overager paparazzi contributed to a young man's death.</p>
+                    </div>
+                </div>
+
+                <div class="vid-con">
+                    <div class="vid-sug" style="background-image: url(../static/image/ep3.jpg);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>3.The Prince of Dark</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <!-- <h3>1.Pilot <span class="do"><i class="fa fa-download" aria-hidden="true"></i></span></h3> -->
+                        <!-- <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p> -->
+                    </div>
+                    <div class="vid-info1">
+                        <p>A pro quaterback on the brink of susperstardom wakes to a grisly discovery and calls on Lucifer hel prove his innocence.</p>
+                    </div>
+                </div>
+
+                <div class="vid-con">
+                    <div class="vid-sug" style="background-image: url(../static/image/ep4.jpg);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>4.Manly Whatnots</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <!-- <h3>1.Pilot <span class="do"><i class="fa fa-download" aria-hidden="true"></i></span></h3> -->
+                        <!-- <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p> -->
+                    </div>
+                    <div class="vid-info1">
+                        <p>Lucifer attempts to chloe, but she's just not like the other ladies.Meanwhile, Amendiel shares his concern with Mze about Lucifer.</p>
+                    </div>
+                </div>
+
+                <div class="vid-con">
+                    <div class="vid-sug" style="background-image: url(../static/image/ep5.webp);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>5.Sweet Kicks</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <!-- <h3>1.Pilot <span class="do"><i class="fa fa-download" aria-hidden="true"></i></span></h3> -->
+                        <!-- <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p> -->
+                    </div>
+                    <div class="vid-info1">
+                        <p>Lucifer's treated to an inside look at the ugly side of fashion.Armed with new information,Amendiel hatches a plan to get Lucifer back home</p>
+                    </div>
+                </div>
+
+                <div class="vid-con">
+                    <div class="vid-sug" style="background-image: url(../static/image/ep6.jpg);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>6.Favorite Son</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <!-- <h3>1.Pilot <span class="do"><i class="fa fa-download" aria-hidden="true"></i></span></h3> -->
+                        <!-- <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p> -->
+                    </div>
+                    <div class="vid-info1">
+                        <p>When a personal possesions is stolen, Lucifer sets out to track the culprit.Meanwhile, Dr.Linda makes a fateful decision.</p>
+                    </div>
+                </div>
+
+                <div class="vid-con">
+                    <div class="vid-sug" style="background-image: url(../static/image/ep7.webp);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>7.Wingman</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <!-- <h3>1.Pilot <span class="do"><i class="fa fa-download" aria-hidden="true"></i></span></h3> -->
+                        <!-- <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p> -->
+                    </div>
+                    <div class="vid-info1">
+                        <p>Lucifer goes in a search of his missing property and gets help from an unlikely source.Chole asks Dan for help with the Palmetto case.</p>
+                    </div>
+                </div>
+
+                <div class="vid-con">
+                    <div class="vid-sug" style="background-image: url(../static/image/ep8.jpg);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>8.Et Tu, Doctor?</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <!-- <h3>1.Pilot <span class="do"><i class="fa fa-download" aria-hidden="true"></i></span></h3> -->
+                        <!-- <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p> -->
+                    </div>
+                    <div class="vid-info1">
+                        <p>Lucifer celebrates his "rebirthday" then teams with chloe and Dr.Linda to investigate the murder of a contreversial therapist</p>
+                    </div>
+                </div>
+
+                <div class="vid-con">
+                    <div class="vid-sug" style="background-image: url(../static/image/ep9.jpg);">
+                        <h1><i class="fa fa-play-circle" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="vid-info">
+                        <div class="one"><h3>9.A Priest walks into Bar</h3></div>
+                        <div class="two"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        <!-- <h3>1.Pilot <span class="do"><i class="fa fa-download" aria-hidden="true"></i></span></h3> -->
+                        <!-- <p>After an old acquaintance meets a violent fate, the charming Lucifer vows revenge on the perpetrators and makes an unexpected alliance.</p> -->
+                    </div>
+                    <div class="vid-info1">
+                        <p>Suspicious that drugs are coming through a youth center, a priest asks lucifer for a litttle help. Amenadial and Malcolm have a heart to heart.</p>
+                    </div>
+                </div>     
+                        
+        </div>
+        
+        
+        
+    </section>
+    
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    
+    <section>
+            <div class="user-flex">
+                <div class="logo">
+                    <img src="../static/image/Netflix-logo-red-black-png.png" alt="">
+                </div>
+                <div class="side">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <span>Manage</span>
+                </div>
+            </div>
+          
+            <div class="user-who">
+                <h2>Who's Watching?</h2>
+            </div>
+           <div class="users">
+            
+              <div class="user">
+                <a href="{{url_for('login')}}"><img src="../static/image/user1.png" alt=""></a><br>
+                <a href="{{url_for('login')}}"><h3>Shanthosh</h3></a>
+               </div>
+               <div class="user">
+                <img src="../static/image/user2.png" alt=""><br>
+                <h3>Hari</h3>
+               </div>
+               <div class="user">
+                <img src="../static/image/download.png" alt=""><br>
+                <h3>Kids</h3>
+               </div>
+               <div class="user">
+                <img src="../static/image/plus.webp" alt=""><br>
+                <h3>Add profile</h3>
+               </div>
+           </div>
+           
+    
+    </section>
+</body>
+</html>

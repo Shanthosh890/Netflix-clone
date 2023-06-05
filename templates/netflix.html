@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <section>
+        <div class="nav">
+            <div class="left">
+                <p><i class="fa fa-bars" aria-hidden="true"></i></p>
+                <div class="drop">
+                    <a href="{{url_for('user')}}"><p class="not"><img src="../static/image/user1.png" alt=""><span>Shanthosh <i class="fa fa-exchange" aria-hidden="true"></i></span></p></a>
+                   <hr>
+                   <h3>Notifications <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                   <hr>
+                   <p><i class="fa fa-download" aria-hidden="true"></i>My Downloads</p>
+                   <hr>
+                   <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">Anime</a></li>
+                       <li><a href="#">Dramas</a></li>
+                       <li><a href="#">Thriller Movies</a></li>
+                       <li><a href="#">Independent Movies</a></li>
+                       <li><a href="#">Horror Movies</a></li>
+                       <li><a href="#">Children & Family Movies</a></li>
+                       <li><a href="#">TV Shows</a></li>
+                       <li><a href="#">Romantic Movies</a></li>
+                       <li><a href="#">Comedies</a></li>
+                       <li><a href="#">Sci-Fi & Fantasy</a></li>
+                       <li><a href="#">Music & Musicals</a></li>
+                       <li><a href="#">Award-Winning Films</a></li>
+                       <li><a href="#">Action & Adventure</a></li>
+                       <li><a href="#">Documentaries</a></li>
+                       <li><a href="#">Available for Download</a></li>
+                       <li><a href="#">International Movies</a></li>
+                       <li><a href="#">Indian Movies</a></li>
+                   </ul>
+               </div>
+                       
+                    <img src="../static/image/netflix.png" alt=""> 
+            </div>
+            <div class="right">
+                <a href="{{url_for('upload')}}"><i class="fa fa-search" aria-hidden="true"></i></a>
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="banner">
+            <video autoplay loop plays-inline muted>
+               <source src="../static/image/YouCut_20230506_195805606_1.mp4">
+            </video>
+        </div>
+        <div class="vid-inside">
+            <div class="inside">
+                <img src="../static/image/netflix (2).png" alt="">
+                <span>SERIES</span>
+                <h1>MONEY</h1>
+                <h1 class="down">HEIST</h1>
+                <span class="play"><i class="fa fa-play" aria-hidden="true"></i>Play</span>
+                <span class="play"><i class="fa fa-plus" aria-hidden="true"></i>My List</span>
+                <p>Eight thieves take hostage and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan</p>
+            </div>
+
+            <div class="inside1">
+                <h1>A</h1>
+            </div>
+        </div>
+        <div class="suggestions">
+            <p>Critically Acclaimed US TV Show</p>
+            <div class="sugg">
+                <img src="../static/image/stranger.jpg" alt="">
+                <img src="../static/image/breaking.jpg" alt="">
+                <img src="../static/image/lucifer.jpg" alt="">
+                <img src="../static/image/sandman.jpeg" alt="">
+                <img src="../static/image/suits.jpg" alt="">
+                <img src="../static/image/Sweet_Tooth_Netflix_poster.webp" alt="">
+                <img src="../static/image/walking dead.jpg" alt="">
+                <img src="../static/image/witch.jpg" alt="">
+            </div>
+            
+            <p>Continue watching for Shanthosh</p>
+           <div class="vid-play2">
+            {%for i in data%}
+            <div class="vid-play1">
+                <div class="vid-play11">
+                    <div class="vid-play">
+                        <a href="{{url_for('background')}}"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="vid-playy">
+                        <img src="{{i.thumb}}" alt="">
+                    </div>
+                </div>
+                
+                
+                <div class="play-info">
+                    <div class="play1">
+                        <h4>{{i.name}}</h4>
+                        <p>2hrs 45min</p>
+                    </div>
+                    <div class="play2">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+            </div> 
+            {%endfor%} 
+
+            <!-- <div class="vid-play1">
+                <div class="vid-play11">
+                    <div class="vid-play">
+                        <a href="{{url_for('background')}}"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="vid-playy">
+                        <img src="../static/image/ep2.jpg" alt="">
+                    </div>
+                </div>
+                
+                
+                <div class="play-info">
+                    <div class="play1">
+                        <h4>Lucifer</h4>
+                        <p>2hrs 45min</p>
+                    </div>
+                    <div class="play2">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+            </div>    -->
+           </div>
+
+           
+    
+            <p>Exciting Movies</p>
+            <div class="sugg">
+                <img src="../static/image/godzila.jpg" alt="">
+                <img src="../static/image/grayman.jpg" alt="">
+                <img src="../static/image/extraction.jpg" alt="">
+                <img src="../static/image/bloodshot.jpg" alt="">
+                <img src="../static/image/uncharted.jpg" alt="">
+                <img src="../static/image/spiderman.jpg" alt="">
+                <img src="../static/image/transformer.jpg" alt="">
+                <img src="../static/image/morbius.jpg" alt="">
+            </div>
+
+            <p>Watch it again</p>
+            <div class="sugg">
+                <img src="../static/image/greatwall.jpg" alt="">
+                <img src="../static/image/rednotice.jpg" alt="">
+                <img src="../static/image/bright.jpg" alt="">
+                <img src="../static/image/pacific.jpg" alt="">
+                <img src="../static/image/troll.jpg" alt="">
+                <img src="../static/image/sandman.jpg" alt="">
+                <img src="../static/image/death.jpg" alt="">
+                <img src="../static/image/warrior.webp" alt="">
+            </div>
+
+            <p>Popular on Netflix</p>
+            <div class="sugg">
+                <img src="../static/image/night.jpg" alt="">
+                <img src="../static/image/black.jpeg" alt="">
+                <img src="../static/image/one.jpg" alt="">
+                <img src="../static/image/sonic.jpg" alt="">
+                <img src="../static/image/raising.jpeg" alt="">
+                <img src="../static/image/tokyo.jpg" alt="">
+                <img src="../static/image/naruto.jpg" alt="">
+                <img src="../static/image/attack.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
